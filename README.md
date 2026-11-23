@@ -61,3 +61,11 @@ sudo ./install.sh uninstall
 
 Backups: `/opt/dnx-photo-novnc-toggle-backups`.
 
+---
+
+## Verbindungen im DNX-Ökosystem
+
+![DNX Gesamtarchitektur & Verbindungen](docs/dnx-architektur-verbindungen.png)
+
+* **Verbindung zu `DNX-Styler` (`#dnx-master-photo` & `t_novnc`):** Schaltet den oberen Headerbereich (`.webrx-top-container` mit Foto/noVNC) synchron zu `t_novnc` ein/aus — ideal im Verbund mit der oberen roten Ziehleiste (`#dnx-top-line`, `96–600 px`).
+* **Verbindung zu `DNX-Receiver-Account-Control`:** Respektiert das Recht **`novnc`** aus `:8095/api/me` sowie die einheitlichen Werkzeugfarben (`dnx_tool_button_colors.js`).
